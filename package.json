@@ -1,0 +1,58 @@
+{
+  "name": "@dialogai/ydb-chat-history",
+  "version": "2.0.0",
+  "description": "YDB (Yandex Database) chat message history implementation for LangChain applications",
+  "main": "main.js",
+  "types": "types.d.ts",
+  "files": [
+    "main.js",
+    "types.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ydb",
+    "yandex-database",
+    "langchain",
+    "chat-history",
+    "message-history",
+    "database",
+    "chat",
+    "ai",
+    "machine-learning",
+    "nlp"
+  ],
+  "author": {
+    "name": "Eugene Ditkovsky",
+    "email": "eugene@dialogai.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niviron-ai/ydb-chat-history.git"
+  },
+  "homepage": "https://github.com/niviron-ai/ydb-chat-history#readme",
+  "bugs": {
+    "url": "https://github.com/niviron-ai/ydb-chat-history/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm test",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "@dieugene/key-value-db": "^1.0.0",
+    "@dieugene/logger": "^1.0.3"
+  },
+  "peerDependencies": {
+    "@langchain/core": ">=0.1.0"
+  },
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}
